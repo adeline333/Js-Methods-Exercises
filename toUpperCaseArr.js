@@ -2,10 +2,10 @@ function upperAndAdd (arr){
     let upper="";
     let length=0;
     let final=[];
-   for(let i=0;i<arr.length;i++){
-  upper+= arr[i].toUpperCase();
+   
+  upper+= arr.toUpperCase();
   length=upper.length;
-   }
+   
  
    return final=[{name:upper}, {length:length}];
 }

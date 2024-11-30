@@ -1,0 +1,40 @@
+
+//a function to put in map that iterates the array of object, checks the student grades and classifies them using if 
+function classify(array){
+    let  newGrade="";
+    
+    
+
+        if(array.grade>=90&&array.grade<=100){
+            newGrade="A";
+        }
+        else if (array.grade>=80&&array.grade<=89){
+            newGrade="B";
+        }
+        else if (array.grade>=70&&array.grade<=79){
+            newGrade="C";
+        }
+       
+        else if (array.grade>=60&&array.grade<=69){
+            newGrade="D";
+        }
+        else if (array.grade<60){
+            newGrade="F";
+        }
+        
+    
+
+    return graded={name:array.name,grade: newGrade};
+}
+
+function grade(array){
+    let finalGrade= array.map(classify);
+    return finalGrade;
+}
+
+console.log(grade( [
+    { name: 'Alice', grade: 85 },
+    { name: 'Bob', grade: 92 },
+    { name: 'Charlie', grade: 78 }
+  ])
+);
