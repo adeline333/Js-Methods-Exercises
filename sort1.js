@@ -1,7 +1,5 @@
 function sorting(array){
-    let sorted= array.sort(function (a,b){
-         return a-b;}
-    ) ;
+    let sorted= array.sort((a,b)=>a-b);
     return sorted;
 }
 

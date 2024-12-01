@@ -1,0 +1,13 @@
+
+
+
+
+function sort(array){
+
+   let  sorted= array.sort();
+
+return sorted;
+}
+const names = ['John', 'alice', 'Bob', 'david', 'Charlie'];
+
+console.log(sort( names));
