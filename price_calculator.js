@@ -4,7 +4,7 @@
 
 function totalPrice(element){
     let discounted= (element.price-(element.price*0.2));
-    let final=(0.1*element.price)+element.price;
+    let final=discounted+(0.1*discounted);
 
 
 
@@ -22,3 +22,16 @@ console.log(  priceCalculator( [
     { name: 'Phone', price: 500 },
     { name: 'Tablet', price: 300 }
   ]));
+
+  
+  console.log(  priceCalculator( [
+    { name: 'Book', price: 0 }
+  ]
+  ));
+  console.log(  priceCalculator([
+    { name: 'Premium', price: 1500 },
+    { name: 'Basic', price: 100 }
+  ]
+  ));
+  
+ 
