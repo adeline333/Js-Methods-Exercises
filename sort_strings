@@ -4,10 +4,14 @@
 
 function sort(array){
 
-   let  sorted= array.sort();
+   let  sorted= array.sort(function (a,b){
+      return a.toLowerCase().localeCompare(b.toLowerCase());
+   });
 
 return sorted;
 }
 const names = ['John', 'alice', 'Bob', 'david', 'Charlie'];
 
 console.log(sort( names));
+
+//compare the firststrig(a) to lowercase and also th second string b to lowercase and compare them using localECompare
