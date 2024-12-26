@@ -9,3 +9,5 @@ function ourReduced(array){
 }
 
 console.log(ourReduced([1, 2, 3, 4, 5]));
+console.log(ourReduced([-1, -2, 0, 2, 1]));
+console.log(ourReduced([100]));

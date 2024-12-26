@@ -1,0 +1,26 @@
+// reduce(callback function, initial value)
+//callback function takes (initial_value,current_value, index, array)
+
+function stat(array){
+    let sum =0;
+    let average =0;
+    let min =0;
+    let max =0;
+    array.reduce(function callback(initial_value,current_value){
+        sum+=current_value;
+        for(let i=0;i<array.length;i++){
+            if (array[i]<array[0]){
+                min =array[i]
+            }
+        }
+    })
+
+    return {
+        sum:sum,
+        min:min
+    }
+     
+}
+
+console.log(stat([-1, -2, 0, 2, 1]));
+//not done with average and max
